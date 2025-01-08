@@ -33,9 +33,8 @@ function App() {
         <div
             className="w-full h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat"
             style={{
-                backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
-            }}
-        >
+                backgroundImage: `url('https://www.tripsavvy.com/thmb/rPS3IcRN1T_LBmgHX2C3IIB2fCU=/2123x1412/filters:no_upscale():max_bytes(150000):strip_icc()/Foreign-currencies-58c5b0253df78c353c57c52f.jpg')`,
+            }}>
             <div className="w-full max-w-md mx-auto border border-gray-300 rounded-lg p-6 backdrop-blur-md bg-white/50 shadow-lg">
                 {loading && <p className="text-center text-gray-700">Loading currency data...</p>}
                 {error && <p className="text-center text-red-500">{error}</p>}
@@ -56,6 +55,7 @@ function App() {
                                 onAmountChange={(amount) => setAmount(amount)}
                             />
                         </div>
+                        <br/>
                         <div className="relative w-full flex justify-center items-center mb-6">
                             <button
                                 type="button"
@@ -63,7 +63,7 @@ function App() {
                                 style={{ top: '-20px' }}
                                 onClick={swap}
                             >
-                                ↔
+                                Swap
                             </button>
                         </div>
                         <div className="mb-6">
